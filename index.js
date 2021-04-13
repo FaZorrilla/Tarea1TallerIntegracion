@@ -16,4 +16,4 @@ const render = views(__dirname + '/views', {
 app.use(render).use(router.routes()).use(router.allowedMethods());
 
 console.log('Listening on 3000.');
-app.listen(3000);
+app.listen(process.env.PORT);
